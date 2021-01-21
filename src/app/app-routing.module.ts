@@ -7,6 +7,7 @@ import { RenunciaProgramaComponent } from './components/renuncia-programa/renunc
 import { ReconsideracionBeneficiarioComponent } from './components/reconsideracion-beneficiario/reconsideracion-beneficiario.component'
 import { AutorizacionTutelarComponent } from './components/autorizacion-tutelar/autorizacion-tutelar.component'
 import { IndiceComponent } from './components/indice/indice.component'
+import { CambioEmpresaComponent } from './components/cambio-empresa/cambio-empresa.component'
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: '',
     component: IndiceComponent
+  },
+  {
+    path: 'cambio-empresa',
+    component: CambioEmpresaComponent
   }
   
 ];
