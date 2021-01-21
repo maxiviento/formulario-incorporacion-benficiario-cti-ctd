@@ -215,9 +215,9 @@ export class ReconsideracionBeneficiarioComponent implements OnInit {
         y = y + 12;
       }
       let nombreArchivo = '00000000000';
-      nombreArchivo = this.model['Datos del beneficiario'][0]['CUIL'];
+      nombreArchivo = this.model['Datos del postulante'][0]['DNI'];
       doc.output('dataurlnewwindow');
-      doc.save('RenunciaPrograma' + nombreArchivo + '.pdf');
+      doc.save('ReconsideracionBeneficiario' + nombreArchivo + '.pdf');
 
 
     } else (error) => {
