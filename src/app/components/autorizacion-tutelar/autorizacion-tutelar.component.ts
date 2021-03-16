@@ -99,7 +99,7 @@ export class AutorizacionTutelarComponent implements OnInit {
 
     {
       className: 'datos-del-beneficiario',
-      template: '<div><h1>FORMULARIO PARA DESIGNAR APODERADO A PADRE, MADRE O TUTOR DE MENORES DE 18 AÑOS PARA EL COBRO DEL BENEFICIO DEL PROGRAMA PRIMER PASO O PPP APRENDÍZ</h1></div>',
+      template: '<div><h1>FORMULARIO PARA DESIGNAR APODERADO A PADRE, MADRE O TUTOR DE MENORES DE 18 AÑOS PARA EL COBRO DEL BENEFICIO DE PROGRAMAS DE EMPLEO</h1></div>',
     },
 
     {
