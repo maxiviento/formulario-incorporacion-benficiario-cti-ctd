@@ -29,6 +29,7 @@ import { RepeatTypeComponent } from './formly-types/repeat-type.formly.component
 import { NoRepeatTypeComponent } from './formly-types/no-repeat-type.formly.component'
 import { FormlyFieldButton } from './formly-types//button-type.component'
 import { MAT_DATE_LOCALE } from '@angular/material/core';
+import { CapacitacionPilComponent } from './components/capacitacion-pil/capacitacion-pil.component';
 import { InscripcionCtiComponent } from './components/inscripcion-cti/inscripcion-cti.component';
 import { BajaBenficiariosComponent } from './components/baja-benficiarios/baja-benficiarios.component';
 import { DescargaODenunciaComponent } from './components/descarga-o-denuncia/descarga-o-denuncia.component';
@@ -63,7 +64,7 @@ export function IpValidatorMessage(err, field: FormlyFieldConfig) {
 }
 
 @NgModule({
-	declarations: [AppComponent, RepeatTypeComponent, NoRepeatTypeComponent, FormlyFieldButton, InscripcionCtiComponent, BajaBenficiariosComponent, DescargaODenunciaComponent, RenunciaProgramaComponent, ReconsideracionBeneficiarioComponent, AutorizacionTutelarComponent, IndiceComponent, CambioEmpresaComponent],
+	declarations: [AppComponent, RepeatTypeComponent, NoRepeatTypeComponent, FormlyFieldButton, CapacitacionPilComponent, InscripcionCtiComponent, BajaBenficiariosComponent, DescargaODenunciaComponent, RenunciaProgramaComponent, ReconsideracionBeneficiarioComponent, AutorizacionTutelarComponent, IndiceComponent, CambioEmpresaComponent],
 	imports: [
 		CommonModule,
 		BrowserModule,
