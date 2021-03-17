@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { EmprendedoresComponent } from './components/emprendedores/emprendedores.component'
 import { CapacitacionPilComponent } from './components/capacitacion-pil/capacitacion-pil.component'
 import { InscripcionCtiComponent } from './components/inscripcion-cti/inscripcion-cti.component'
 import { BajaBenficiariosComponent } from './components/baja-benficiarios/baja-benficiarios.component'
@@ -11,6 +12,10 @@ import { IndiceComponent } from './components/indice/indice.component'
 import { CambioEmpresaComponent } from './components/cambio-empresa/cambio-empresa.component'
 
 const routes: Routes = [
+  {
+    path: 'emprendedores',
+    component: EmprendedoresComponent
+  },
   {
     path: 'capacitacion-pil',
     component: CapacitacionPilComponent

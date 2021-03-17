@@ -38,6 +38,7 @@ import { ReconsideracionBeneficiarioComponent } from './components/reconsideraci
 import { AutorizacionTutelarComponent } from './components/autorizacion-tutelar/autorizacion-tutelar.component';
 import { IndiceComponent } from './components/indice/indice.component';
 import { CambioEmpresaComponent } from './components/cambio-empresa/cambio-empresa.component';
+import { EmprendedoresComponent } from './components/emprendedores/emprendedores.component';
 
 export function validateRequired(err, field: FormlyFieldConfig) {
 	return `${field.key} es requerido`
@@ -64,7 +65,7 @@ export function IpValidatorMessage(err, field: FormlyFieldConfig) {
 }
 
 @NgModule({
-	declarations: [AppComponent, RepeatTypeComponent, NoRepeatTypeComponent, FormlyFieldButton, CapacitacionPilComponent, InscripcionCtiComponent, BajaBenficiariosComponent, DescargaODenunciaComponent, RenunciaProgramaComponent, ReconsideracionBeneficiarioComponent, AutorizacionTutelarComponent, IndiceComponent, CambioEmpresaComponent],
+	declarations: [AppComponent, RepeatTypeComponent, NoRepeatTypeComponent, FormlyFieldButton, CapacitacionPilComponent, InscripcionCtiComponent, BajaBenficiariosComponent, DescargaODenunciaComponent, RenunciaProgramaComponent, ReconsideracionBeneficiarioComponent, AutorizacionTutelarComponent, IndiceComponent, CambioEmpresaComponent, EmprendedoresComponent],
 	imports: [
 		CommonModule,
 		BrowserModule,
