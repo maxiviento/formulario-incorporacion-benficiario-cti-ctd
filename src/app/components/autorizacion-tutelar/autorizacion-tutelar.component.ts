@@ -14,7 +14,7 @@ export class AutorizacionTutelarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  title = 'AUTORIZACIÓN DEL PADRE, MADRE O TUTOR DE MENORES DE 18 AÑOS PARA DESARROLLAR TAREAS DE CAPACITACIÓN O TRABAJO EL PROGRAMA PRIMER PASO'
+  title = 'AUTORIZACIÓN DEL PADRE, MADRE O TUTOR DE MENORES DE 18 AÑOS PARA DESARROLLAR TAREAS DE CAPACITACIÓN O PRÁCTICA LABORAL'
   form = new FormGroup({})
   options: FormlyFormOptions = {};
   model: any = {
@@ -89,7 +89,7 @@ export class AutorizacionTutelarComponent implements OnInit {
           },
           {
             className: 'info-aclaracion',
-            template: 'a participar de Programa Primer Paso o PPP Aprendiz del Gobierno de la Provincia de Córdoba.<p>Leído, firma por ante mi previa lectura y ratificación. CONSTE.</p>'
+            template: 'a participar de Programa PIL del Gobierno de la Provincia de Córdoba.<p>Leído, firma por ante mi previa lectura y ratificación. CONSTE.</p>'
           }
         ]
       },
@@ -225,7 +225,7 @@ export class AutorizacionTutelarComponent implements OnInit {
             type: 'input',
             templateOptions: {
               label: 'Número',
-              placeholder: 'Igrese un número',
+              placeholder: 'Ingrese un número',
               pattern: '\\d{1,10}',
             }
           },
@@ -234,7 +234,7 @@ export class AutorizacionTutelarComponent implements OnInit {
             type: 'input',
             templateOptions: {
               label: 'Piso',
-              placeholder: 'Igrese un piso',
+              placeholder: 'Ingrese un piso',
               pattern: '\\d{1,10}',
             }
           },
@@ -243,7 +243,7 @@ export class AutorizacionTutelarComponent implements OnInit {
             type: 'input',
             templateOptions: {
               label: 'Depto',
-              placeholder: 'Igrese un departamento',
+              placeholder: 'Ingrese un departamento',
             }
           },
           {
@@ -251,7 +251,7 @@ export class AutorizacionTutelarComponent implements OnInit {
             type: 'input',
             templateOptions: {
               label: 'Barrio',
-              placeholder: 'Igrese un barrio',
+              placeholder: 'Ingrese un barrio',
             }
           },
           {
@@ -259,7 +259,7 @@ export class AutorizacionTutelarComponent implements OnInit {
             type: 'input',
             templateOptions: {
               label: 'Localidad',
-              placeholder: 'Igrese una localidad',
+              placeholder: 'Ingrese una localidad',
             }
           },
           {
@@ -282,6 +282,19 @@ export class AutorizacionTutelarComponent implements OnInit {
           }
         ]
       }
+    },
+    {
+      key: "text",
+      type: "textarea",
+      defaultValue:
+        "fhskdjfhs dfk sdfhk sdfhk sdfkj skdfj skjd fksj dfksd fksjdfhks dfkjs dfksjd fksjdf hksdf hksdf ksdf hksdfh ksjdfh skjdfh skjdfh skjdfh skjdf hksjfdhksfd",
+
+      templateOptions: {
+        label: "Textarea with specified rows",
+        placeholder: "This has 10 rows",
+        rows: 10,
+        disabled: true,
+      }
     }
   ]
 
@@ -296,6 +309,7 @@ export class AutorizacionTutelarComponent implements OnInit {
 
 
       doc.setFont('helvetica')
+      //doc.text('Quien suscribe la nota declara conocer las reglamentaciones vigentes del Programa y se comprometena  cumplimentar los requisitos estipulados en el mismo. Los datos contenidos en este formulario tienen carácter de declaración jurada y están protegidos por el secreto estadístico.',15,20)
 
       let m = 5;
       let y = 0;
