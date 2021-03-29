@@ -16,7 +16,20 @@ export class CapacitacionPilComponent implements OnInit {
   }
   title = 'FORMULARIO INSCRIPCION DE EMPLEADOS A CURSOS PIL'
   form = new FormGroup({})
-  options: FormlyFormOptions = {};
+  options: FormlyFormOptions = {
+    formState: {
+      selectOptionsData: {
+        Capacitacion: [
+          {id: 'Metalmecánica para Fábricas de Maquinaria Agrícola', name: 'Metalmecánica para Fábricas de Maquinaria Agrícola', idSector: 'Industria de maquinarias agrícolas'},
+          {id: 'Orientación Soldadura', name: 'Orientación Soldadura', idSector: 'Industria de maquinarias agrícolas'},
+          {id: 'Orientación Tornería', name: 'Orientación Tornería', idSector: 'Industria de maquinarias agrícolas'},
+          {id: 'Comercio electrónico', name: 'Comercio electrónico', idSector: 'Comercio electrónico'},
+          {id: 'Nuevas tecnologías', name: 'Nuevas tecnologías', idSector: 'Nuevas tecnologías'},
+          {id: 'Comercio exterior', name: 'Comercio exterior', idSector: 'Comercio exterior'},
+        ],
+      }
+    }
+  };
   model: any = {
   }
 
@@ -94,16 +107,34 @@ export class CapacitacionPilComponent implements OnInit {
             }
           },
           {
-            key: 'Capacitación',
+            key: 'PIL',
             type: 'select',
             templateOptions: {
-              label: 'Capacitacion',
+              label: 'PIL',
               options:[
-                {value: 'Soldadura de Producción', label: 'Soldadura de Producción'},
-                {value: 'Tornería de Producción', label: 'Tornería de Producción'},
-                
-              ]
+                {id: 'Comercio exterior', name: 'Comercio exterior'},
+                {id: 'Nuevas tecnologías', name: 'Nuevas tecnologías'},
+                {id: 'Comercio electrónico', name: 'Comercio electrónico'},
+                {id: 'Industria de maquinarias agrícolas', name: 'Industria de maquinarias agrícolas'},
+              ],
+              valueProp: 'id',
+              labelProp: 'name'
             }
+          },
+          {
+            key: 'Capacitacion',
+            type: 'select',
+            templateOptions: {
+              label: 'Capacitación',
+              options:[],
+              valueProp: 'id',
+              labelProp: 'name'
+            },
+            expressionProperties: {
+              'templateOptions.options': 'formState.selectOptionsData.Capacitacion.filter(Capacitacion => Capacitacion.idSector === model.PIL)',
+              // reset model when updating select options
+              'model.Capacitacion': `field.templateOptions.options.find(o => o.id === model.Capacitacion) ? model.Capacitacion:null`,
+            },
           },
         ]
       }
