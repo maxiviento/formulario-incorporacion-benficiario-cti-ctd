@@ -148,10 +148,14 @@ export class EmprendedoresComponent {
           },
           {
             key: '¿Con qué género te identificas?',
-            type: 'input',
+            type: 'select',
             templateOptions: {
               label: '¿Con qué género te identificas?',
-              placeholder: 'Ingrese un género'
+              placeholder: 'Ingrese un género',
+              options: [
+                { value: 'MASCULINO', label: 'MASCULINO' },
+                { value: 'FEMENINO', label: 'FEMENINO' },
+                { value: 'OTRO', label: 'OTRO' },]
             }
           },
           {
@@ -161,9 +165,6 @@ export class EmprendedoresComponent {
               label: 'Nivel alcanzado',
               placeholder: 'Nivel educacion',
               options: [
-                { value: "ninguno", label: 'Ninguno'  },
-                { value: "jardin", label: 'Jardín'  },
-                { value: "preescolar", label: 'Preescolar'  },
                 { value: "primario inc", label: 'Primario Incompleto'  },
                 { value: "primario comp", label: 'Primario Completo'  },
                 { value: "secundario inc", label: 'Secundario Incompleto'  },
@@ -238,9 +239,6 @@ export class EmprendedoresComponent {
               {value: 'Industria', label: 'Industria'},
               {value: 'Servicios', label: 'Servicios'},
               {value: 'Tecnología', label: 'Tecnología'},
-              {value: 'Rubro 4', label: 'Rubro 4'},
-              {value: 'Rubro 5', label: 'Rubro 5'},
-              {value: 'Rubro 6', label: 'Rubro 6'},
               {value: 'Otros', label: 'Otros'},
             ]
           },

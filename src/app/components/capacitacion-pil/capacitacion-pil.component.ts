@@ -99,8 +99,8 @@ export class CapacitacionPilComponent implements OnInit {
             templateOptions: {
               label: 'Capacitacion',
               options:[
-                {value: 'cap1', label: 'cap2'},
-                {value: 'cap2', label: 'cap2'},
+                {value: 'Soldadura de Producción', label: 'Soldadura de Producción'},
+                {value: 'Tornería de Producción', label: 'Tornería de Producción'},
                 
               ]
             }

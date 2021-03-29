@@ -3,30 +3,10 @@
   
     <form [formGroup]="form" >
       <formly-form [form]="form" [fields]="fields" [model]="model" [options]="options"></formly-form>   
-      <mat-card>
-        En esta modalidad el empleador debe presentar además el formulario de "Alta Temprana" de AFIP y la Planilla
-        de horarios.
-          <p></p>
-          MODALIDAD CTI/CTE:
-          <ol>
-            <li>CTI Contrato por Tiempo Indeterminado</li>
-            <li>CTD Contarto por Tiempo Determinado siempre que el vencimiento del contrato sea igual o posterior
-              a la finalización del programa
-            </li>
-          </ol>
-        <div><p></p><b>IMPORTANTE:</b> Una vez completo el formulario podrá presentarse en cualquiera de las mesas de entrada (SUAC) del
-        Gobierno Provincial, también se podrá remitir a través de Correo del interior, sin abonar franqueo, al Ministerio de
-        Promoción del Empleo y de la Economía Familiar, Av. Juan B. Justo 3600, B° Gral. Bustos. CP 5000, Córdoba Capital.</div>
-        <p></p>
-        <div><b>RECUERDE QUE ESTE FORMULARIO ES DE PRESENTACIÓN OBLIGATORIA AL INICIO DE LA PRÁCTICA POR PARTE DE LAS EMPRESAS
-          PARA LA LIQUIDACIÓN DE PAGOS, COBERTURA DE ART Y SUPERVISIONES.
-        </b></div>
-      <p></p>
-        <p><button type="button" mat-raised-button color="primary" (click)="createPdf()" [disabled]="!form.valid">Generar Formulario de solicitud de crédito en PDF</button></p>
-      </mat-card>
+      
     </form>
     
    <pre>
-      {{model | json}}
+    <!--  {{model | json}} -->
     </pre>
   </div> 
