@@ -60,7 +60,7 @@ export class CapacitacionPilComponent implements OnInit {
               placeholder: 'Ingrese un CUIT'
             }
           },
-          
+
           {
             key: 'Razón social',
             type: 'input',
@@ -94,6 +94,7 @@ export class CapacitacionPilComponent implements OnInit {
             type: 'input',
             templateOptions: {
               label: 'Apellido y Nombre',
+              required: true,
               placeholder: 'Ingrese un apellido y un nombre'
             }
           },
@@ -102,6 +103,7 @@ export class CapacitacionPilComponent implements OnInit {
             type: 'input',
             templateOptions: {
               label: 'CUIL',
+              required: true,
               pattern: '\\d{11}',
               placeholder: 'Ingrese un CUIL del empleado'
             }

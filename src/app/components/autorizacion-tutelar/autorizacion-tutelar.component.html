@@ -1,24 +1,24 @@
 <div flex = 33 id="container">
     <h1>{{ title }}</h1>
-  
+
     <form [formGroup]="form" >
-      <formly-form [form]="form" [fields]="fields" [model]="model" [options]="options"></formly-form>   
+      <formly-form [form]="form" [fields]="fields" [model]="model" [options]="options"></formly-form>
       <mat-card>
         <b>IMPORTANTE:</b> Una vez completo el formulario deberá adjuntarse a <a  href="https://fid.cba.gov.ar/ee-fid-multinota/multinota/#/form/FID/MNOTA_OTRO?reparticion=SEPE01">Mesa de entrada e-tramites </a>
-        <p></p><p>Quien suscribe la nota declara conocer las reglamentaciones vigentes del Programa y se comprometena  cumplimentar 
-            los requisitos estipulados en el mismo. Los datos contenidos en este formulario tienen carácter de declaración jurada y están 
+        <p></p><p>Quien suscribe la nota declara conocer las reglamentaciones vigentes del Programa y se comprometen a  cumplimentar
+            los requisitos estipulados en el mismo. Los datos contenidos en este formulario tienen carácter de declaración jurada y están
             protegidos por el secreto estadístico.</p>
-        <p>Asimismo, para el caso de resultar beneficiario, autorizo expresamente al Banco de la Provincia de Córdoba para debitar fondos 
-            y/o cierre de la cuenta bancaria asignada en virtud del presente Programa, y reintegrar a la Autoridad de Aplicación los montos que, 
-            por demora en la información sobre la falta de cumplimiento de los requisitos del mismo, no me correspondieren, liberando dicha entidad 
+        <p>Asimismo, para el caso de resultar beneficiario, autorizo expresamente al Banco de la Provincia de Córdoba para debitar fondos
+            y/o cierre de la cuenta bancaria asignada en virtud del presente Programa, y reintegrar a la Autoridad de Aplicación los montos que,
+            por demora en la información sobre la falta de cumplimiento de los requisitos del mismo, no me correspondieren, liberando dicha entidad
             bancaria de toda responsabilidad por al operatoria.</p>
         <p></p>
 
         <p><button type="button" mat-raised-button color="primary" (click)="createPdf()" [disabled]="!form.valid">Generar Formulario en PDF</button></p>
       </mat-card>
     </form>
-    
+
    <pre>
       {{model | json}}
     </pre>
-  </div> 
+  </div>
