@@ -47,7 +47,7 @@ export class InscripcionCtiComponent implements OnInit {
               placeholder: 'Ingrese un CUIT'
             }
           },
-          
+
           {
             key: 'Razón social',
             type: 'input',
@@ -81,7 +81,9 @@ export class InscripcionCtiComponent implements OnInit {
             type: 'input',
             templateOptions: {
               label: 'Apellido y Nombre',
+              required: true,
               placeholder: 'Ingrese un apellido y un nombre'
+
             }
           },
           {
@@ -90,6 +92,7 @@ export class InscripcionCtiComponent implements OnInit {
             templateOptions: {
               label: 'DNI',
               pattern: '\\d{7,8}',
+              required: true,
               placeholder: 'Ingrese un DNI'
             }
           },
@@ -98,10 +101,12 @@ export class InscripcionCtiComponent implements OnInit {
             type: 'select',
             templateOptions: {
               label: 'Modalidad',
+              required: true,
               options:[
                 {value: 'CTI', label: 'CTI'},
                 {value: 'CTD', label: 'CTD'},
-                
+
+
               ]
             }
           },

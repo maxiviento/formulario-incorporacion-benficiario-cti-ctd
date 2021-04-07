@@ -47,7 +47,7 @@ export class CambioEmpresaComponent implements OnInit {
               placeholder: 'Ingrese su/s nombre/s y apellido/s'
             }
           },
-          
+
           {
             key: 'DNI',
             type: 'input',
@@ -72,6 +72,7 @@ export class CambioEmpresaComponent implements OnInit {
             type: 'select',
             templateOptions:{
               label: 'Motivo del cambio de empresa',
+              required: true,
               options:[
                 {value: 'La empresa me despidió o me dió de baja', label: 'La empresa me despidió o me dió de baja'},
                 {value: 'La empresa cerró o quebró', label: 'La empresa cerró o quebró'},
@@ -269,7 +270,7 @@ export class CambioEmpresaComponent implements OnInit {
         addText: 'Ingresar Un día y un horario',
       },
       fieldArray: {
-        fieldGroup: [  
+        fieldGroup: [
           {
             key: 'Día',
             type: 'select',
@@ -339,7 +340,7 @@ export class CambioEmpresaComponent implements OnInit {
         ]
       }
     },
-           
+
     //--------------------------------------------------------------------------------------------------------
 
   ]

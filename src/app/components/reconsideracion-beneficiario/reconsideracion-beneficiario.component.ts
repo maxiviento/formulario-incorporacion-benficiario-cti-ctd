@@ -100,6 +100,7 @@ export class ReconsideracionBeneficiarioComponent implements OnInit {
             type: 'select',
             templateOptions: {
               label: 'Estado final en el que quedó después del sorteo',
+              required: true,
               options: [
                 {value: 'Empresa no apta', label: 'Empresa no apta'},
                 {value: 'Rechazo formal', label: 'Rechazo formal'},
@@ -144,7 +145,7 @@ export class ReconsideracionBeneficiarioComponent implements OnInit {
       className: 'info-anexo',
       template: '<p><b>Si anexa alguna documentación debe informarlo por CIDI</p></b>'
     },
-  
+
   ]
 
 
