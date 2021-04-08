@@ -25,7 +25,6 @@ export class CapacitacionPilComponent implements OnInit {
           {id: 'Orientación Tornería', name: 'Orientación Tornería', idSector: 'Industria de maquinarias agrícolas'},
           {id: 'Comercio electrónico', name: 'Comercio electrónico', idSector: 'Comercio electrónico'},
           {id: 'Nuevas tecnologías', name: 'Nuevas tecnologías', idSector: 'Nuevas tecnologías'},
-          {id: 'Comercio exterior', name: 'Comercio exterior', idSector: 'Comercio exterior'},
         ],
       }
     }
@@ -45,6 +44,7 @@ export class CapacitacionPilComponent implements OnInit {
     {
       key: 'Datos de la empresa',
       type: 'no repeat',
+      defaultValue : "1",
       templateOptions: {
         addText: 'Ingresar datos de la empresa',
       },
@@ -112,7 +112,6 @@ export class CapacitacionPilComponent implements OnInit {
             templateOptions: {
               label: 'PIL',
               options:[
-                {id: 'Comercio exterior', name: 'Comercio exterior'},
                 {id: 'Nuevas tecnologías', name: 'Nuevas tecnologías'},
                 {id: 'Comercio electrónico', name: 'Comercio electrónico'},
                 {id: 'Industria de maquinarias agrícolas', name: 'Industria de maquinarias agrícolas'},
