@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "formularioBanco"
+  "defaultProject": "formularioBanco",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -133,7 +133,7 @@ export class AutorizacionTutelarComponent implements OnInit {
     },
 
     //--------------------------------------------------------------------------------------------------------
-    
+
     {
       className: 'datos-solicitados-por-el-banco',
       template: '<div><h2>DATOS SOLICITADOS POR EL BANCO PARA APODERAR. (Solo datos del apoderado mayor de edad)</div></h2>'
@@ -284,17 +284,17 @@ export class AutorizacionTutelarComponent implements OnInit {
       }
     },
     {
-      key: "text",
+     /* key: "text",
       type: "textarea",
       defaultValue:
-        "fhskdjfhs dfk sdfhk sdfhk sdfkj skdfj skjd fksj dfksd fksjdfhks dfkjs dfksjd fksjdf hksdf hksdf ksdf hksdfh ksjdfh skjdfh skjdfh skjdfh skjdf hksjfdhksfd",
+        "",
 
       templateOptions: {
         label: "Textarea with specified rows",
         placeholder: "This has 10 rows",
         rows: 10,
         disabled: true,
-      }
+      }*/
     }
   ]
 

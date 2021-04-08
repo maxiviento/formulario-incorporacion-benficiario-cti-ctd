@@ -48,7 +48,7 @@ export class BajaBenficiariosComponent implements OnInit {
               placeholder: 'Ingrese un CUIT'
             }
           },
-          
+
           {
             key: 'Razón social',
             type: 'input',
@@ -100,6 +100,7 @@ export class BajaBenficiariosComponent implements OnInit {
             type: 'input',
             templateOptions: {
               label: 'Apellido y Nombre',
+              required: true,
               placeholder: 'Ingrese un apellido y un nombre'
             }
           },
@@ -146,6 +147,7 @@ export class BajaBenficiariosComponent implements OnInit {
             type: 'select',
             templateOptions:{
               label: 'Motivo',
+              required: true,
               options: [
                 {value: 'El beneficiario nunca se presentó al Entrenamiento', label: 'El beneficiario nunca se presentó al Entrenamiento'},
                 {value: 'La empresa cerró o quebró', label: 'La empresa cerró o quebró'},

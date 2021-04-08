@@ -1,8 +1,8 @@
 <div flex = 33 id="container">
     <h1>{{ title }}</h1>
-  
+
     <form [formGroup]="form" >
-      <formly-form [form]="form" [fields]="fields" [model]="model" [options]="options"></formly-form>   
+      <formly-form [form]="form" [fields]="fields" [model]="model" [options]="options"></formly-form>
       <mat-card>
         <b>EL BENEFICIARIO NO PODRÁ COMENZAR SU ENTRENAMIENTO EN LA NUEVA EMPRESA SI NO ESTÁ AUTORIZADO
           POR EL PROGRAMA. PODRÁ CONSULTAR SU ESTADO Y NOTIFICARSE EN LA PÁGINA WEB DEL PROGRAMA.
@@ -10,9 +10,7 @@
           RECUERDE QUE LA NUEVA EMPRESA DEBE CUMPLIR CON LOS REQUISITOS DEL PROGRAMA Y DISPONER DE CUPO
           PARA SU ACEPTACIÓN.
         </b>
-        <div><p></p><b>IMPORTANTE:</b> Una vez completo el formulario podrá presentarse en cualquiera de las mesas de entrada (SUAC) del
-        Gobierno Provincial, también se podrá remitir a través de Correo del interior, sin abonar franqueo, al Ministerio de
-        Promoción del Empleo y de la Economía Familiar, Av. Juan B. Justo 3600, B° Gral. Bustos. CP 5000, Córdoba Capital.</div>
+        <div><p></p><b>IMPORTANTE:</b> Una vez completo el formulario deberá adjuntarse a <a  href="https://fid.cba.gov.ar/ee-fid-multinota/multinota/#/form/FID/MNOTA_OTRO?reparticion=SEPE01">Mesa de entrada e-tramites </a></div>
         <p></p>
         <div><b>IMPORTANTE:</b> El beneficiario NO debe dejar su entrenamiento en la empresa de origen hasta tanto se le notifique la
         autorización del cambio de empresa. Sólo podrá dejar de trabajar en caso de baja, renuncia o denuncia por problemas laborales
@@ -21,8 +19,8 @@
         <p><button type="button" mat-raised-button color="primary" (click)="createPdf()" [disabled]="!form.valid">Generar Formulario en PDF</button></p>
       </mat-card>
     </form>
-    
+
    <pre>
       {{model | json}}
     </pre>
-  </div> 
+  </div>

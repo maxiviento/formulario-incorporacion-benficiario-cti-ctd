@@ -115,7 +115,7 @@ export class RenunciaProgramaComponent implements OnInit {
               placeholder: 'Ingrese un CUIT'
             }
           },
-          
+
           {
             key: 'Razón social',
             type: 'input',
@@ -161,6 +161,7 @@ export class RenunciaProgramaComponent implements OnInit {
       type: 'input',
       templateOptions:{
         type: 'date',
+        required: true,
         label: 'Fecha en que dejó de asistir a la empresa',
       }
     }
