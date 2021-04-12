@@ -1,25 +1,25 @@
 <div flex = 33 id="container">
     <h1>{{ title }}</h1>
-  
+
     <form [formGroup]="form" >
-      <formly-form [form]="form" [fields]="fields" [model]="model" [options]="options"></formly-form>   
+      <formly-form [form]="form" [fields]="fields" [model]="model" [options]="options"></formly-form>
       <mat-card>
-        <b>IMPORTANTE:</b> Una vez completo el formulario deberá adjuntarse a <a  href="https://fid.cba.gov.ar/ee-fid-multinota/multinota/#/form/FID/MNOTA_OTRO?reparticion=SEPE01">Mesa de entrada e-tramites </a>
+
         <p></p>
 <b>IMPORTANTE:</b> El beneficio de los programas es para las personas que realizan su Entrenamiento en el
-marco de los mismos, con el fin de facilitarles la inserción en el mercado laboral. Por tanto, para continuar en el programa, los 
-beneficiarios pueden presentar un Formulario de Cambio de Empresa. Mientras tanto, estarán suspendidos en el programa lo cual implica 
-que no se les abonará el pago del beneficio hasta tanto se les autorice el cambio de empresa y cumplan con el entrenamiento en la nueva empresa. 
+marco de los mismos, con el fin de facilitarles la inserción en el mercado laboral. Por tanto, para continuar en el programa, los
+beneficiarios pueden presentar un Formulario de Cambio de Empresa. Mientras tanto, estarán suspendidos en el programa lo cual implica
+que no se les abonará el pago del beneficio hasta tanto se les autorice el cambio de empresa y cumplan con el entrenamiento en la nueva empresa.
 Así mismo, no se les abonarán los meses que no hacen prestación por más que continúen dentro del presupuesto provincial.
         <p></p>
-En caso de beneficiarios asignados por la Dirección de Conciliación y Arbitraje del Ministerio de Trabajo, o la delegación del Ministerio 
+En caso de beneficiarios asignados por la Dirección de Conciliación y Arbitraje del Ministerio de Trabajo, o la delegación del Ministerio
 de Trabajo correspondiente a cada localidad
       <p></p>
         <p><button type="button" mat-raised-button color="primary" (click)="createPdf()" [disabled]="!form.valid">Generar Formulario en PDF</button></p>
       </mat-card>
     </form>
-    
-   <pre>
+
+ <!--   <pre>
       {{model | json}}
-    </pre>
-  </div> 
+    </pre> -->
+  </div>

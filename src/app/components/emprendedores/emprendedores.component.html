@@ -1,20 +1,19 @@
 <div flex = 33 id="container">
     <h1>{{ title }}</h1>
     <p>Complete el formulario con su solicitud.</p>
-    
+
     <form [formGroup]="form" >
       <formly-form [form]="form" [fields]="fields" [model]="model" [options]="options"></formly-form>
-        
+
       <div flex = 33>
         <mat-card>
         <p><button type="button" mat-raised-button color="primary" (click)="createPdf()" [disabled]="!form.valid">Generar Formulario en PDF</button></p>
       </mat-card>
       </div>
-      
-  
+
+
     </form>
-    
-   <pre>
-       {{model | json}} 
-    </pre>
-  
+
+  <!--  <pre>
+       {{model | json}}
+    </pre>-->
